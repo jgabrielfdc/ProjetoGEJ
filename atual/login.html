@@ -4,14 +4,20 @@
 <head>
   <!-- Meta tags Obrigatórias -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <!--CSS Personalizado-->
@@ -20,6 +26,7 @@
   <title>Guia de Estudos Júnior</title>
 </head>
 
+<body>
 <!--Cabeçalho-->
 <header>
 
@@ -37,10 +44,10 @@
       <div class="collapse navbar-collapse" id="nav-principal">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <span class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="./">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Materiais</a>
+            <a class="nav-link" href="materiais.html">Materiais</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Suporte</a>
@@ -52,20 +59,40 @@
   </nav>
 </header>
 
-<section>
-  <div id="login">
+<section  id="login">
+  <div>
     <form>
       <h2>Login</h2>
       <hr>
       <div class="grupo_form form-group">
-        <input type="email" name="email" id="email" placeholder="E-mail:" class="form-control form-control-sm">
-        <input type="password" name="senha" id="senha" placeholder="Senha:" class="form-control form-control-sm">
+
+        <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="E-mail:" 
+          class="form-control form-control-sm"
+        >
+
+        <input 
+          type="password" 
+          name="senha" 
+          id="senha" 
+          placeholder="Senha:" 
+          class="form-control form-control-sm"
+        >
+
       </div>
       <hr>
-      <input type="submit" class="btn btn-primary btn-lg btn-auth">Logar<br>
+
+      <button class="btn btn-primary btn-lg btn-auth">Logar</button>
+
       <hr>
+
     </form>
+
     <button class="btn btn-danger btn-auth" onclick="window.location.href='cadastro.html'">Criar Conta</button>
+    
   </div>
 
 </section>
@@ -79,7 +106,7 @@
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<!-- <script src="estilo.js"></script> -->
+  <script src="app.js"></script>
 </body>
 
 </html>
