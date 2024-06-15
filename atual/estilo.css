@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+}
+
+label,
+input,
+textarea,
+.botao_suporte {
+  display: block;
+}
+
+input,
+textarea,
+.botao_suporte {
+  width: 80%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: white;
+  background: #cfd3e1;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #1d90f5;
+  box-shadow: 0 0 0 0.3125rem #c5d5ef;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #84868f;
+}
+
+textarea {
+  min-height: 12.5rem;
+  max-height: 21.5rem;;
+  resize: vertical;
+  width:95%;
+}
+
+.botao_suporte {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: #1d90f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao_suporte:hover,
+.botao_suporte:focus {
+  outline: none;
+  background: #1c70d3;
+}
+
+.botao_suporte:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}

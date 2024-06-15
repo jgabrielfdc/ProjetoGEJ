@@ -42,10 +42,10 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Materiais</a>
+              <a class="nav-link" href="materiais.html">Materiais</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Suporte</a>
+              <a class="nav-link" href="suporte.html">Suporte</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
 
   <section>
     <div id="cadastro">
-      <form>
+      <form method="post">
         <h2>Cadastro</h2>
         <hr>
         <div class="grupo_form form-group">
@@ -64,15 +64,20 @@
           <input type="email" name="email" id="email" placeholder="E-mail:" class="form-control form-control-sm">
           <input type="password" name="senha" id="senha" placeholder="Senha:" class="form-control form-control-sm">
           <h4 class="mt-2 text-center">Área de Interesse</h4>
+
           <label for="front">Front-end</label>
-          <input type="checkbox" value="Front-end" id="front"><br>
+          <input type="radio" value="1" id="front" name="area_interesse" required><br>
+
           <label for="back">Back-end</label>
-          <input type="checkbox" value="back-end" id="back"><br>
+          <input type="radio" value="2" id="back" name="area_interesse" required><br>
+
           <label for="FS">Full Stack</label>
-          <input type="checkbox" value="FS" id="FS"><br>
+          <input type="radio" value="3" id="FS" name="area_interesse" required><br>
         </div>
+
         <hr>
-        <input type="submit" value="Cadastrar" class="btn btn-primary btn-lg btn-auth"><br>
+
+        <button class="btn btn-primary btn-lg btn-auth">Logar</button>
         <hr>
       </form>
       <button class="btn btn-warning btn-auth" onclick="window.location.href='login.html'">Entrar Conta</button>

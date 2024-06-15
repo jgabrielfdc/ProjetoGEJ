@@ -22,13 +22,14 @@
 
   <!--CSS Personalizado-->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
 
   <title>Guia de Estudos Júnior</title>
 </head>
 
 <body>
 <!--Cabeçalho-->
-<header>
+<header class="sticky-top">
 
   <nav class="navbar navbar-expand-sm navbar-light navega">
     <div class="container">
@@ -52,6 +53,12 @@
           <li class="nav-item">
             <a class="nav-link" href="suporte.html">Suporte</a>
           </li>
+
+          <li class="nav-item">
+            <button class="btn btn-light" onclick="window.location.href='login.html'">
+              <span class="text-secondary">Entrar</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -59,40 +66,24 @@
   </nav>
 </header>
 
-<section  id="login">
+<section  id="email">
   <div>
-    <form method="post">
-      <h2>Login</h2>
-      <hr>
-      <div class="grupo_form form-group">
+    <form id="cadastro"
+      action="https://formsubmit.co/ajax/2b192c3ec75e1a029822e873090cd10c"
+      method="POST"
+      data-form
+    >
 
-        <input 
-          type="email" 
-          name="email" 
-          id="email" 
-          placeholder="E-mail:" 
-          class="form-control form-control-sm"
-        >
-
-        <input 
-          type="password" 
-          name="senha" 
-          id="senha" 
-          placeholder="Senha:" 
-          class="form-control form-control-sm"
-        >
-
-      </div>
-      <hr>
-
-      <button class="btn btn-primary btn-lg btn-auth">Logar</button>
-
-      <hr>
-
+    <h3 class="text-md-center">Envie sua Dúvida</h3>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" Placeholder='Insira seu Nome'  class="form-control" required/>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Insira seu E-mail"  class="form-control" required/>
+      <label for="mensagem">Mensagem</label><br>
+      <center><textarea name="mensagem" id="mensagem"  placeholder="Sua dúvida aqui" class="form-control" required></textarea></center><br>
+      <center><button type="submit" data-button class="btn btn-info botao_suporte">Enviar</button></center>
     </form>
 
-    <button class="btn btn-danger btn-auth" onclick="window.location.href='cadastro.html'">Criar Conta</button>
-    
   </div>
 
 </section>
