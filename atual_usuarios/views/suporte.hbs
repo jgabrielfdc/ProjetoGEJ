@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!--CSS Personalizado-->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/estilo.css">
+
+  <title>Guia de Estudos Júnior</title>
+</head>
+
+<body>
+<!--Cabeçalho-->
+  <header>
+
+    <nav class="navbar navbar-expand-sm navbar-light navega">
+      <div class="container">
+        <!--Logo Site-->
+        <a href="" class="navbar-brand">
+          <img src="Imagens/gej (2).png" width="142">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/materiais">Materiais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/suporte">Suporte</a>
+            </li>
+
+            <li class="nav-item">
+              <button class="btn btn-light" onclick="window.location.href='/login'">
+                <span class="text-secondary">Entrar</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+<section id="suporte" class="pb-5 pt-3" style="">
+  <div class="m-3">
+    <form id="cadastro"
+      action="https://formsubmit.co/ajax/2b192c3ec75e1a029822e873090cd10c"
+      method="POST"
+      data-form
+    >
+
+    <h3 class="text-md-center">Envie sua Dúvida</h3>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" Placeholder='Insira seu Nome'  class="form-control" required/>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Insira seu E-mail"  class="form-control" required/>
+      <label for="mensagem">Mensagem</label><br>
+      <center><textarea name="mensagem" id="mensagem"  placeholder="Sua dúvida aqui" class="form-control" required></textarea></center><br>
+      <center><button type="submit" data-button class="btn btn-info botao_suporte">Enviar</button></center>
+    </form>
+
+  </div>
+
+</section>
+
+
+
+<footer class="py-3 sticky-bottom">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="./" class="nav-link px-2 text-body-secondary text-secondary ">Home</a></li>
+      <li class="nav-item"><a href="/materiais" class="nav-link px-2 text-body-secondary text-secondary">Materiais</a></li>
+      <li class="nav-item"><a href="/suporte" class="nav-link px-2 text-body-secondary text-secondary">Suporte</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+  </footer>
+<!-- JavaScript (Opcional) -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="/email.js"></script>
+</body>
+
+</html>
