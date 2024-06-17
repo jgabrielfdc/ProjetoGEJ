@@ -39,6 +39,20 @@ router.get("/usuario", (req, res) => {
     res.render('usuario');
 });
 
+router.get("/html", (req, res) => {
+    //res.send("<h2>Home Page</h2>")
+    res.render('html');
+});
+
+router.get("/intro", (req, res) => {
+    //res.send("<h2>Home Page</h2>")
+    res.render('intro');
+});
+router.get("/equipe", (req, res) => {
+    //res.send("<h2>Home Page</h2>")
+    res.render('equipe');
+});
+
 module.exports= router;
 
 // ! Fim dos redirecionamentos
