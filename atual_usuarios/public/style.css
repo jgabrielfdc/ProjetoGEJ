@@ -4,7 +4,10 @@
 */
 
 /*----------------------------------------------*/
-/*Recursos Responsividade*/
+
+/* ! Recursos Responsividade*/
+
+/* * Telas Muito Pequenas*/
 @media(max-width:575.98px){
     .btn-custom{
         margin:10px 15px;
@@ -31,6 +34,7 @@
     }
 }
 
+/** Telas Pequenas*/
 @media (min-width:576px) and (max-width:767.98px){
     h1{
         font-size:3.2em;
@@ -64,6 +68,7 @@
     }
 }
 
+/** Telas Medias */
 @media (min-width:768px) and (max-width:991.98px){
     h1{
         font-size: 4em;
@@ -92,6 +97,8 @@
     }
 }
 
+
+/** Telas Grandes*/
 @media (min-width:992px) and (max-width:1199.98px){
     h1{
         font-size: 5em;
@@ -129,38 +136,22 @@
     }
 }
 
+/*Fim Responsividade*/
 
 html,body{
-    width: 100%;;
+    width: 100%;
 }
+
 body {
-    background:linear-gradient(80deg, #15bafc,#a1e1fd);
     font-family: Helvetica,Arial, sans-serif
 }
-nav.navbar-transparente{
-    padding:10px 0px;
-    background: rgba(0,0,0,0.4);
-}
-.navbar-light .navbar-nav .nav-link{
-    color:lightgray;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-    color:rgb(213, 202, 255);
-}
-.navbar-light .navbar-toggler{
-    color: rgba(255,255,255,.5);
-    border-color:rgba(255,255,255,.3)
-}
-.divide{
-    margin:20px 0px;
-    width:1px;
-    background:white
-}
+
 /*Capa
 ----------------------------------------*/
 .capa{
     text-align:center;
 }
+
 .btn-custom{
 color:white;
 border-radius:500px;
@@ -170,6 +161,7 @@ text-transform:uppercase;
 transition:background 0.4s, color 0.4s;
 padding:10px 20px;
 }
+
 .btn-roxo{
     background: #1ca1b3;
 }
@@ -179,12 +171,13 @@ padding:10px 20px;
 }
 .btn-branco{
     border:2px outset white;
-;
-}    
+}
+
 .btn-branco:hover{
     background-color: white;
     color:black;
 }
+
 /*Estruruta Content
 ----------------------------------------*/
 .albuns{
@@ -196,9 +189,9 @@ padding:10px 20px;
     -webkit-transform:rotate(16deg);
     padding-left:80px;
 }
-.navega{
-    background: linear-gradient(to bottom,#0090e4,#75cff8);
-    color:black;
+
+#corpo_principal{
+    background:linear-gradient(to bottom, #75cff8 ,#0090e4);
 }
 /*Rodapé
 ----------------------------------------*/
@@ -292,9 +285,7 @@ h4{
     width:5%;
 }
 
-#nav-principal .navbar-nav .nav-item{
-    margin-left:5px;
-}
+
 /*--------------------------------------------------------------------------------*/
 
 a{
@@ -338,7 +329,7 @@ footer .social a{
     background: white;
     padding: 2%;
     border-radius:15%;
-    border:2px black;
+    border:2px outset rgb(138, 138, 138);
     border-style: ridge;
     box-shadow:1px 6px 18px 0px black;
 }
@@ -450,4 +441,37 @@ img.profile{
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+
+.introducao{
+    box-shadow:1px 4px 10px #000;
+    border-radius:10px;
+}
+/* ! Navegação */
+
+nav.navbar-transparente{
+    padding:10px 0px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:lightgray;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:rgb(213, 202, 255);
+}
+.navbar-light .navbar-toggler{
+    color: rgba(255,255,255,.5);
+    border-color:rgba(255,255,255,.3)
+}
+.divide{
+    margin:20px 0px;
+    width:1px;
+    background:white
+}
+.navega{
+    background: linear-gradient(to bottom,#0090e4,#75cff8);
+    color:black;
+}
+
+#nav-principal .navbar-nav .nav-item{
+    margin-left:5px;
 }

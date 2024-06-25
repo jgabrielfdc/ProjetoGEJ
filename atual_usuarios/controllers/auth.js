@@ -30,7 +30,7 @@ exports.cadastro = async (req, res) => {
         });
         }else if (senha != confirmaSenha){
             return res.render('cadastro',{
-                message: 'Senhas Não Coincidem'
+                message: '<p class="alert alert-danger m-2">Senhas Não Coincidem</p>'
             }) ; 
         }
         let hashedPassword = await bcrypt.hash(senha, 8);
@@ -41,10 +41,11 @@ exports.cadastro = async (req, res) => {
             }else{
                 return res.render('cadastro', {
                     message: 'Usuario Registrado'
-                })
+                });
+                res.redirect('/login');
             }
 
-            res.redirect('/login');
+            
         });
     
     });
